@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepana Sri | Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Deepana Sri, an MCA student building responsive, accessible web interfaces and full-stack projects.">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta property="og:title" content="Deepana Sri | Frontend Developer Portfolio">
+  <meta property="og:description" content="Responsive, accessible web interfaces and full-stack projects by an MCA student.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%232458d6'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Georgia,serif' font-style='italic' text-anchor='middle' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+  <script>
+    /* Set the theme before first paint so the page never flashes the wrong colours. */
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Deepana Sri, back to top"><span class="brand-mark">D</span>Deepana<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">◐</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>MCA student · Frontend developer</p>
+          <h1>Hi, I'm <span>Deepana Sri.</span><br>I build clear, useful web interfaces.</h1>
+          <p class="hero-text">I'm an MCA student who turns ideas into responsive, accessible websites, and I build the data and backend work behind them too. Before MCA I studied commerce, so I care about getting details right.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See my projects <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            <a class="btn btn-secondary" id="resumeLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Download resume <span aria-hidden="true">↓</span></a>
+          </div>
+          <ul class="hero-meta">
+            <li>Frontend development</li>
+            <li>Full-stack projects</li>
+            <li>Machine learning</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-card">
+            <div class="profile-top"><span class="mini-dot"></span><span class="mini-dot"></span><span class="mini-dot"></span><span class="profile-label">developer.profile</span></div>
+            <div class="avatar">DS</div>
+            <h2>Curious mind.<br><span>Careful builder.</span></h2>
+            <div class="code-line"><span>const</span> role = <b>"MCA student"</b>;</div>
+            <div class="code-line"><span>let</span> focus = <b>"frontend"</b>;</div>
+            <div class="profile-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <span class="float-badge badge-code">&lt;/&gt; Clean code</span>
+          <span class="float-badge badge-ui">Accessible UI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">About me</p>
+          <h2 class="section-title">Two backgrounds, <span>one careful approach.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>I'm doing my MCA while building projects across the web stack: responsive frontends, Node.js and Express backends, and data-driven work in Python and machine learning. My commerce degree taught me to care about accuracy, and I bring that to every layout and every line of logic.</p>
+          <p>This portfolio collects the projects I've built, the tools I use and the best ways to reach me.</p>
+          <h3 class="mini-heading">Education</h3>
+          <ul class="timeline">
+            <li><strong>MCA</strong><span>Karpagam College of Engineering, Coimbatore · Anna University</span></li>
+            <li><strong>B.Com</strong><span>Sri Vijay Vidyalaya College of Arts and Science · Periyar University</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">Tools I use <span>to build things.</span></h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">⌘</div>
+            <h3>Frontend</h3>
+            <div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive design</span><span>Accessibility basics</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">{ }</div>
+            <h3>Backend and data</h3>
+            <div class="chips"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Supabase</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">▦</div>
+            <h3>Python and ML</h3>
+            <div class="chips"><span>Python</span><span>Machine learning</span><span>Data analytics</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">✧</div>
+            <h3>Tools</h3>
+            <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Browser dev tools</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title">Projects that show <span>what I can do.</span></h2>
+
+        <h3 class="mini-heading">CodeAlpha frontend internship</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual visual-gallery" aria-hidden="true"><div class="visual-window"><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+            <div class="project-content">
+              <h3>Interactive Image Gallery</h3>
+              <p>A responsive photo gallery with category filters, live search and a keyboard-friendly lightbox.</p>
+              <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="card-actions"><a class="text-link" href="../CodeAlpha_Image_Gallery/index.html">View project <span aria-hidden="true">↗</span></a><button class="details-btn" type="button" data-project="gallery">Details</button></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-calc" aria-hidden="true"><div class="calc-mini"><small>CALCULATOR</small><strong>128 ÷ 4</strong><b>32</b><div class="calc-mini-keys"><i>AC</i><i>÷</i><i>×</i><i>−</i><i>7</i><i>8</i><i>9</i><i>+</i></div></div></div>
+            <div class="project-content">
+              <h3>Bluecalc Calculator</h3>
+              <p>A calculator with keyboard input, repeat-equals, saved history and clear error messages.</p>
+              <div class="chips"><span>JavaScript</span><span>Keyboard input</span><span>Dark mode</span></div>
+              <div class="card-actions"><a class="text-link" href="../CodeAlpha_Calculator/index.html">View project <span aria-hidden="true">↗</span></a><button class="details-btn" type="button" data-project="calculator">Details</button></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-portfolio" aria-hidden="true"><div class="portfolio-mini"><span></span><span></span><span></span><div></div><div></div></div></div>
+            <div class="project-content">
+              <h3>Developer Portfolio</h3>
+              <p>This site: a responsive, theme-aware portfolio built without frameworks.</p>
+              <div class="chips"><span>Responsive</span><span>Accessible</span><span>UI design</span></div>
+              <div class="card-actions"><a class="text-link" href="#home">Back to top <span aria-hidden="true">↑</span></a><button class="details-btn" type="button" data-project="portfolio">Details</button></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="mini-heading more-heading">More projects</h3>
+        <ul class="more-list">
+          <li>
+            <div><h4>Vinayaga Paints &amp; Hardware</h4><p>A full-stack e-commerce admin dashboard for a paint and hardware business, backed by Supabase.</p></div>
+            <div class="chips"><span>Full-stack</span><span>Supabase</span></div>
+          </li>
+          <li>
+            <div><h4>PCOS classification</h4><p>A machine learning model that classifies PCOS using real clinical data from Kaggle.</p></div>
+            <div class="chips"><span>Python</span><span>Machine learning</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let's make something <span>useful together.</span></h2>
+          <p class="contact-copy">Have an opportunity, a suggestion or a project idea? Send a message and I'll get back to you.</p>
+          <div class="contact-detail"><span aria-hidden="true">✉</span><div><small>Email</small><a href="mailto:your.email@example.com" id="emailLink">your.email@example.com</a></div><button class="copy-email" id="copyEmail" type="button">Copy</button></div>
+          <div class="contact-detail"><span aria-hidden="true">in</span><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/deepana-sri-26229b2b4/" target="_blank" rel="noopener noreferrer">linkedin.com/in/deepana-sri</a></div></div>
+          <div class="contact-detail"><span aria-hidden="true">⌘</span><div><small>GitHub</small><a href="https://github.com/DeepanaSri2004" target="_blank" rel="noopener noreferrer">github.com/DeepanaSri2004</a></div></div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send a message</h3>
+          <label for="name">Your name</label>
+          <input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Enter your name">
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="you@example.com">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required maxlength="1000" placeholder="How can I help?" aria-describedby="messageCount"></textarea>
+          <p class="char-count" id="messageCount">0 / 1000</p>
+          <button class="btn btn-primary" type="submit">Open in email app <span aria-hidden="true">↗</span></button>
+          <p class="form-note" id="formNote" role="status">This opens your email app with the message ready to send. Nothing is stored.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark">D</span>Deepana<span class="brand-dot">.</span></a>
+      <p>Designed and built by Deepana Sri · <span id="year"></span></p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-head">
+      <h3 id="dialogTitle"></h3>
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close project details">✕</button>
+    </div>
+    <p id="dialogSummary"></p>
+    <h4>What it does</h4>
+    <ul id="dialogFeatures"></ul>
+    <div class="chips" id="dialogChips"></div>
+    <a class="btn btn-primary" id="dialogLink" href="#">Open project <span aria-hidden="true">↗</span></a>
+  </dialog>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
